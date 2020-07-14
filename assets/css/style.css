@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;500&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.head{
+    background: #0C7C31; 
+}
+
+.container-fluid {
+    margin: auto;
+    overflow: hidden;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.inner {
+    background: url('../img/Group\ 32.png');
+    height: 472px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.en {
+    background: url('../img/Group\ 39.png');
+    height: 472px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sec{
+    color: black;
+    margin: 100px auto !important;
+}
+.sec ul{
+    list-style: url('../img/Group\ 3\ \(1\).png');
+    margin-top: 70px;
+}
+.sec h1{
+    color: #F05E23; 
+    font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 71px;
+}
+.sec p{
+    font-size:18px;
+line-height: 20px;
+color: #191919;
+}
+.sec ul li{
+    color: #191919;
+    margin:20px;
+}
+.btn-danger {
+    background: #F05E23;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+input{
+    border: none;
+    padding: 6px;
+    width: 400px;
+}
+button {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.input-wrap{
+    border: 0.6 solid white;
+    display: flex;
+    justify-content: stretch;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.mon h1{
+    font-family: Muli;
+font-style: normal;
+font-weight: bold;
+font-size: 46.9591px;
+line-height: 59px;
+color: #FFFFFF;
+}
+.mon h3{
+    font-family: 'Muli', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 19.5663px;
+color: #FFFFFF;
+}
+.com{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.com img{
+    margin: 10px 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* carousel */
+

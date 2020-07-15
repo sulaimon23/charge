@@ -1,3 +1,44 @@
+ <?php
+
+include 'db.php';
+if(isset($_POST['submit-btn'])){
+  $email = $_POST['email'];
+
+  $query = $conn->query("SELECT * from subscribers where email='$email'");
+
+  $numrows = $query->num_rows;
+
+  if($numrows == 0){
+    $sql = $conn->query("INSERT INTO subscribers(email) VALUES ('$email')");
+    if($sql){
+      $error = "<div class='succ wow slideInDown slow ' id='one'>
+      <div>
+        <i class='fa fa-check-circle'></i>
+      <p>Subscribed</p>
+      </div>  
+    </div>" 
+    }else{ 
+      $error = "<div class='warn wow slideInDown slow ' id='two'>
+      <div>
+        <i class='fa fa-exclamation-triangle'></i>
+      <p>Email already Exist</p>
+      </div>  
+    </div>" 
+    }
+  }else{
+    $error = "<div class='dang wow slideInDown slow ' id='three'>
+    <div>
+      <i class='fa fa-close'></i>
+    <p>An Error occured</p>
+    </div>  
+  </div>"
+  }
+
+}
+
+?> 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +49,14 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
 
   <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+
   <div class="head my-0 p-5">
     <div class="container mt-5">
       <div class="col-md-12 on">
@@ -29,10 +71,12 @@
           </div>
           <div class="my-5">
             <h3>Be the first to use this app when it arrives</h3>
-            <div class="input-wrap">
-              <input type="text" placeholder="Email address">
-              <button class="btn btn-danger">Submit</button>
-            </div>
+            <form action="" method="Post">
+              <div class="input-wrap">
+                <input type="text" placeholder="Email address" name="email">
+                <button class="btn btn-danger" name="submit-btn">Submit</button>
+              </div>
+            </form>
           </div>
           <div class="mb-5 com">
             <h5>Coming soon on</h5>
@@ -51,11 +95,25 @@
     </div>
   </div>
 
+  
+  
+  <?php
+
+    if(isset($error)){
+      echo $error;
+    }
+
+  ?>
+
+
+
+
+
 
   <section class="container sec">
     <div class="row">
       <div class="col-md-5 wow fadeInDown">
-        <div >
+        <div>
           <img src="./assets/img/Group 33.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
       </div>
@@ -95,8 +153,8 @@
   <section class="container sec sid">
     <div class="row">
       <div class="col-md-5 wow fadeInUp">
-        <div >
-          <img src="./assets/img/Group 34.png" onclick="openModal();currentSlide(3)" >
+        <div>
+          <img src="./assets/img/Group 34.png" onclick="openModal();currentSlide(3)">
         </div>
       </div>
       <div class="col-md-7 my-auto align-self-center wow fadeInUp">
@@ -108,41 +166,41 @@
   </section>
 
 
-<!-- The Modal/Lightbox -->
+  <!-- The Modal/Lightbox -->
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 5</div>
-      <img src="./assets/img/Group 33.png" style="width:100%">
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="./assets/img/Group 33.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="./assets/img/Group 34.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="./assets/img/Group 35 (1).png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="./assets/img/Group 39.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="./assets/img/Group 48.png" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 5</div>
-      <img src="./assets/img/Group 34.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 5</div>
-      <img src="./assets/img/Group 35 (1).png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 5</div>
-      <img src="./assets/img/Group 39.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">5 / 5</div>
-      <img src="./assets/img/Group 48.png" style="width:100%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-</div>
 
 
   <section class="container sec sid">
@@ -153,8 +211,8 @@
           eu fugiat nulla pariatur. </p>
       </div>
       <div class="col-md-5 wow fadeInUp">
-        <div >
-          <img src="./assets/img/Group 39.png" onclick="openModal();currentSlide(4)" >
+        <div>
+          <img src="./assets/img/Group 39.png" onclick="openModal();currentSlide(4)">
         </div>
       </div>
     </div>
@@ -176,24 +234,26 @@
   </section>
 
 
-    <div class="container-fluid lind">
-      <div class="container">
-        <div class="link-wrap">
-          <i class="fa fa-windows"></i>
-          <i class="fa fa-amazon"></i>
-          <i class="fa fa-apple"></i>
-          <i class="fa fa-android"></i>
-        </div>
+  <div class="container-fluid lind">
+    <div class="container">
+      <div class="link-wrap">
+        <i class="fa fa-windows"></i>
+        <i class="fa fa-amazon"></i>
+        <i class="fa fa-apple"></i>
+        <i class="fa fa-android"></i>
       </div>
     </div>
-    <div class="sub-wrap container-fluid">
-     <div class="container">
+  </div>
+  <div class="sub-wrap container-fluid">
+    <div class="container">
       <div class="fut align-self-center wow slideInLeft">
-          <h3>Be the first to use this app when it arrives</h3>
+        <h3>Be the first to use this app when it arrives</h3>
+        <form action="" method="Post">
           <div class="footer-input">
-            <input type="text" placeholder="Email address">
-            <button class="btn btn-danger">Submit</button>
+            <input type="text" placeholder="Email address" name="email">
+            <button class="btn btn-danger" name="submit-btn">Submit</button>
           </div>
+        </form>
         <div class="mb-5 com">
           <h5>Coming soon on</h5>
           <img src="./assets/img/Group 35.png" alt="">
@@ -223,11 +283,11 @@
           </div>
         </div>
       </div>
-     </div>
-     <div class="copy wow fadeInDown">
-       Copyright &copy; 2020 
-     </div>
     </div>
+    <div class="copy wow fadeInDown">
+      Copyright &copy; 2020
+    </div>
+  </div>
 
 
 

@@ -13,8 +13,69 @@ body {
     height: 100vh;
     box-sizing: border-box;
 }
+.succ {
+    width: 250px;
+    height: 100px;
+    background: #50ce54;
+    position: absolute;
+    z-index: 999999999999;
+    top: 20px;
+    right: 20px;
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -1px -1px 17px 3px rgba(182, 218, 159, 0.63);
+}
+
+.succ p{
+    display: inline;
+}
+.warn {
+    width: 250px;
+    height: 100px;
+    background: #f5f11df1;
+    position: absolute;
+    z-index: 999999999999;
+    top: 20px;
+    right: 20px;
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -1px -1px 17px 3px rgba(238, 240, 144, 0.63);
+}
+.warn p{
+    display: inline;
+}
+.dang {
+    width: 250px;
+    height: 100px;
+    background: #f51d1df1;
+    position: absolute;
+    z-index: 999999999999;
+    top: 20px;
+    right: 20px;
+    font-family: cursive;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -1px -1px 17px 3px rgba(238, 137, 137, 0.63);
+}
+.dang p{
+    display: inline;
+}
+
+
 .head{
     background: #0C7C31; 
+    margin-top: 0;
 }
 
 .container-fluid {
@@ -139,10 +200,10 @@ line-height:normal;
 }
 .copy{
     text-align: center;
-    color: #F05E23;
+    color: #f8f7f694;
     border-top: 1px solid gray;
     padding:10px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top:20px;
 }
 .sub-wrap ul{

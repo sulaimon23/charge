@@ -65,7 +65,7 @@ if(isset($_POST['submit-btn'])){
   
   <div class="head my-0 ">
     <nav id="myNavbar" class="navbar navbar-light navbar-expand-md fixed-top">
-      <a class="navbar-brand" href="#"><img src="./assets/img/Group 25.png" alt=""></a>
+      <a class="navbar-brand" href="#"><img src="./assets/img/Group 25.png" alt="" id="imm"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

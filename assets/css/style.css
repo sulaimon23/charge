@@ -490,6 +490,9 @@ line-height:normal;
     .lin col{
         padding: 0;
     }
+    .imm{
+        width: 200px;
+    }
   }
 
 

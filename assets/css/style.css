@@ -141,8 +141,8 @@ color: #191919;
     width:50%;
 }
 .head button {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 .input-wrap{
     border: 0.6 solid white;
@@ -151,6 +151,7 @@ color: #191919;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    width: 100%;
 }
 .mon h1{
     font-family: Muli;
@@ -392,6 +393,10 @@ line-height:normal;
         text-align: center;
         align-items: center;
     }
+    
+    .mon .int{
+        text-align: center;
+    }
     .mon h1{
         font-size: 22px;
     }
@@ -427,11 +432,42 @@ line-height:normal;
     .sub-wrap .col-xs-6 ul{
         padding: 0;
     }
+    .head{
+        text-align: center !important;
+    }
     .fut h3{
         font-size: 15px;
     }
     .fut{
         display: inline;
+    }
+    .pad{
+        display: inline !important;
+        width: 33% !important;
+    }
+    .int {
+        text-align: center !important;
+    }
+    .mon{
+        text-align: center !important;
+    }
+    ul{
+        padding: 0;
+    }
+    .com{
+        margin-bottom: 10px !important;
+    }
+    .lin {
+        text-align: left !important;
+    }
+    .lin a{
+        font-size: 12px;
+    }
+    .lin li{
+        margin: 5px auto;
+    }
+    .lin col{
+        padding: 0;
     }
   }
 

@@ -16,22 +16,23 @@ if(isset($_POST['submit-btn'])){
         <i class='fa fa-check-circle'></i>
       <p>Subscribed</p>
       </div>  
-    </div>" 
+    </div>" ;
     }else{ 
-      $error = "<div class='warn wow slideInDown slow ' id='two'>
-      <div>
-        <i class='fa fa-exclamation-triangle'></i>
-      <p>Email already Exist</p>
-      </div>  
-    </div>" 
-    }
-  }else{
-    $error = "<div class='dang wow slideInDown slow ' id='three'>
+      $error = "<div class='dang wow slideInDown slow ' id='three'>
     <div>
       <i class='fa fa-close'></i>
     <p>An Error occured</p>
     </div>  
-  </div>"
+  </div>";
+    }
+  }else{
+    
+    $error = "<div class='warn wow slideInDown slow ' id='two'>
+    <div>
+      <i class='fa fa-exclamation-triangle'></i>
+    <p>Email already Exist</p>
+    </div>  
+  </div>" ;
   }
 
 }
@@ -57,19 +58,19 @@ if(isset($_POST['submit-btn'])){
 
 <body>
 
-  <div class="head my-0 p-5">
-    <div class="container mt-5">
+  <div class="head my-0 ">
+    <div class="container p-3">
       <div class="col-md-12 on">
         <img src="./assets/img/Group 25.png" alt="">
       </div>
     </div>
     <div class="container my-5 mon">
       <div class="row">
-        <div class="col-md-7 my-auto align-self-center wow fadeInDown">
-          <div class="mb-5">
+        <div class="col-md-7 my-auto  wow fadeInDown int">
+          <div class="mb-2">
             <h1>Share battery charge with other devices easily.</h1>
           </div>
-          <div class="my-5">
+          <div class="my-2">
             <h3>Be the first to use this app when it arrives</h3>
             <form action="" method="Post">
               <div class="input-wrap">
@@ -261,9 +262,9 @@ if(isset($_POST['submit-btn'])){
           <i class="fa fa-amazon"></i>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-sm-6 col-md-6">
+      <div class="container lin">
+        <div class="row ">
+          <div class="col-xs-4 col-sm-4 col-md-4 pad">
             <ul>
               <li><a href="#">Windows</a></li>
               <li><a href="#">Apple</a></li>
@@ -272,7 +273,16 @@ if(isset($_POST['submit-btn'])){
               <li><a href="#">Android</a></li>
             </ul>
           </div>
-          <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="col-xs-4 col-sm-4 col-md-4 pad">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Developer</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 pad">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Developer</a></li>

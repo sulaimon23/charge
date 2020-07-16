@@ -7,7 +7,9 @@ html {
 * {
     box-sizing: border-box;
 }
-
+p{
+    color:#25282b;
+}
 body {
     color: white;
     height: 100vh;
@@ -32,6 +34,7 @@ body {
 
 .succ p{
     display: inline;
+    color:#fff;
 }
 .warn {
     width: 250px;
@@ -51,6 +54,7 @@ body {
 }
 .warn p{
     display: inline;
+    color:#fff;
 }
 .dang {
     width: 250px;
@@ -70,6 +74,7 @@ body {
 }
 .dang p{
     display: inline;
+    color:#fff;
 }
 
 
@@ -91,7 +96,7 @@ body {
 
 
 .inner {
-    background: url('../img/Group\ 32.png');
+    background: url('../img/Group 117 1.png');
     height: 472px;
     width: 100%;
     background-position: center;
@@ -124,16 +129,25 @@ margin-bottom:20px;
 .sec p{
     font-size:18px;
 line-height: 20px;
-color: #191919;
+color:#25282b;
 }
 .sec ul li{
-    color: #191919;
+    color:#25282b;
     margin:20px;
 }
 .btn-danger {
     background: #F05E23;
     border: none;
     border-radius: 0px 10px 10px 0px;
+}
+.head ul{
+    margin-right: 0 !important;
+}
+.nav-link a{
+    cursor:pointer !important;
+}
+.nav-link a:hover{
+    color:red !importantf;
 }
 .head input{
     border: none;
@@ -505,3 +519,15 @@ line-height:normal;
 
 
 
+
+
+
+
+/* bb0a26a3d3f746
+
+
+98f44400
+
+
+
+@us-cdbr-east-02.cleardb.com */

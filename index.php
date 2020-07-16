@@ -64,18 +64,18 @@ if(isset($_POST['submit-btn'])){
 
   
   <div class="head my-0 ">
-    <nav id="myNavbar" class="navbar navbar-light navbar-expand-md fixed-top">
+    <nav id="myNavbar" class="navbar navbar-light navbar-expand-lg fixed-top">
       <a class="navbar-brand" href="#"><img src="./assets/img/Group 25.png" alt="" id="imm"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse  w-90 m-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav w-100 m-auto mr-0">
-          <li class="nav-item w-100 active">
-            <a class="nav-link w-50 m-auto mr-0" style="color: white" href="#about">About<span class="sr-only">(current)</span></a>
+        <ul class="navbar-nav form-inline  m-auto my-lg-0 ml-0">
+          <li class="nav-item active mr-3">
+            <a class="nav-link " style="color: white" href="#about">About<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item w-100 m-auto ">
+          <li class="nav-item m-auto ">
             <a class="nav-link  m-auto"style="color:white" href="#how">How to use</a>
           </li>
         </ul>
@@ -84,7 +84,7 @@ if(isset($_POST['submit-btn'])){
     </nav>
     <div class="container p-3">
     </div>
-    <div class="container my-5 mon">
+    <div class="container my-5 mon" >
       <div class="row">
         <div class="col-md-7 my-auto  wow fadeInDown int">
           <div class="mb-2">
@@ -227,7 +227,7 @@ if(isset($_POST['submit-btn'])){
   </div>
 
 
-  <section class="container sec sid">
+  <section class="container sec sid" id="about">
     <div class="row">
       <div class="col-md-7 my-auto align-self-center wow fadeInUp">
         <h1>You can send battery directly to your favorite devices.</h1>

@@ -370,7 +370,24 @@ line-height:normal;
     position: absolute;
     top: 0;
   }
+  .mag{
+      width:228px;
+      height:454px;
+  }
+  .nav-link{
+      margin-right:  0 !important   ;
+  }
+  nav{
+      background: green !important;
+      display: flex !important;
+      justify-content: space-between;
+  }
   
+  .navbar-collapse{
+      width: 50% !important;
+      margin-right: 0 !important;
+      text-align: right !important;
+  }
   /* Caption text */
   .caption-container {
     text-align: center;
@@ -459,6 +476,10 @@ line-height:normal;
     }
     .lin {
         text-align: left !important;
+    }
+    .nav-link {
+        width: 100% !important;
+        color: white !important;
     }
     .lin a{
         font-size: 12px;

@@ -58,11 +58,28 @@ if(isset($_POST['submit-btn'])){
 
 <body>
 
+
+  
   <div class="head my-0 ">
-    <div class="container p-3">
-      <div class="col-md-12 on">
-        <img src="./assets/img/Group 25.png" alt="">
+    <nav id="myNavbar" class="navbar navbar-light navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="#"><img src="./assets/img/Group 25.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse  w-90 m-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 m-auto mr-0">
+          <li class="nav-item w-100 active">
+            <a class="nav-link w-50 m-auto mr-0" style="color: white" href="#about">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item w-100 m-auto ">
+            <a class="nav-link  m-auto"style="color:white" href="#how">How to use</a>
+          </li>
+        </ul>
+        
       </div>
+    </nav>
+    <div class="container p-3">
     </div>
     <div class="container my-5 mon">
       <div class="row">
@@ -95,7 +112,6 @@ if(isset($_POST['submit-btn'])){
       </div>
     </div>
   </div>
-
   
   
   <?php
@@ -111,14 +127,14 @@ if(isset($_POST['submit-btn'])){
 
 
 
-  <section class="container sec">
+  <section class="container sec" id="how">
     <div class="row">
       <div class="col-md-5 wow fadeInDown">
         <div>
           <img src="./assets/img/Group 33.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
       </div>
-      <div class="col-md-7 my-auto align-self-center wow fadeInDown">
+      <div class="col-md-7 my-auto align-self-center wow fadeInDown" id="how">
         <h1>5 Easy Steps to follow. </h1>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
           eu fugiat nulla pariatur.</p>
@@ -174,27 +190,31 @@ if(isset($_POST['submit-btn'])){
     <div class="modal-content">
 
       <div class="mySlides">
-        <div class="numbertext">1 / 5</div>
+        <div class="numbertext">1 / 6</div>
         <img src="./assets/img/Group 33.png" style="width:100%">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">2 / 5</div>
+        <div class="numbertext">2 / 6</div>
         <img src="./assets/img/Group 34.png" style="width:100%">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">3 / 5</div>
+        <div class="numbertext">3 / 6</div>
         <img src="./assets/img/Group 35 (1).png" style="width:100%">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">4 / 5</div>
+        <div class="numbertext">4 / 6</div>
         <img src="./assets/img/Group 39.png" style="width:100%">
       </div>
       <div class="mySlides">
-        <div class="numbertext">5 / 5</div>
+        <div class="numbertext">5 / 6</div>
         <img src="./assets/img/Group 48.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="./assets/img/Group 97.png" style="width:100%">
       </div>
 
       <!-- Next/previous controls -->
@@ -213,7 +233,7 @@ if(isset($_POST['submit-btn'])){
       </div>
       <div class="col-md-5 wow fadeInUp">
         <div>
-          <img src="./assets/img/Group 39.png" onclick="openModal();currentSlide(4)">
+          <img src="./assets/img/Group 39.png" class="mag" onclick="openModal();currentSlide(4)">
         </div>
       </div>
     </div>
@@ -230,6 +250,21 @@ if(isset($_POST['submit-btn'])){
         <h1>You can send battery directly to your favorite devices.</h1>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
           eu fugiat nulla pariatur. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container sec sid">
+    <div class="row">
+      <div class="col-md-7 my-auto align-self-center wow fadeInUp">
+        <h1>Enter the amount of battery you want to send.</h1>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum lorem ipsum is simply free text dolore
+          eu fugiat nulla pariatur. </p>
+      </div>
+      <div class="col-md-5 wow fadeInUp">
+        <div>
+          <img src="./assets/img/Group 97.png" class="mag" onclick="openModal();currentSlide(6)">
+        </div>
       </div>
     </div>
   </section>
@@ -262,37 +297,7 @@ if(isset($_POST['submit-btn'])){
           <i class="fa fa-amazon"></i>
         </div>
       </div>
-      <div class="container lin">
-        <div class="row ">
-          <div class="col-xs-4 col-sm-4 col-md-4 pad">
-            <ul>
-              <li><a href="#">Windows</a></li>
-              <li><a href="#">Apple</a></li>
-              <li><a href="#">Microsoft</a></li>
-              <li><a href="#">Iphone</a></li>
-              <li><a href="#">Android</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-4 col-sm-4 col-md-4 pad">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Developer</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-4 col-sm-4 col-md-4 pad">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Developer</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      
     </div>
     <div class="copy wow fadeInDown">
       Copyright &copy; 2020

@@ -1,3 +1,10 @@
+
+let can = document.getElementById('can').addEventListener('click', e => {
+  let one = document.getElementById('one')
+  one.style.display = "none";
+  console.log('hey')
+})
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }

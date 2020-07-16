@@ -13,13 +13,15 @@ if(isset($_POST['submit-btn'])){
     if($sql){
       $error = "<div class='succ wow slideInDown slow ' id='one'>
       <div>
+        <h1 id='can'>&times;</h1>
         <i class='fa fa-check-circle'></i>
       <p>Subscribed</p>
       </div>  
     </div>" ;
     }else{ 
-      $error = "<div class='dang wow slideInDown slow ' id='three'>
+      $error = "<div class='dang wow slideInDown slow ' id='one'>
     <div>
+      <h1 id='can'>&times;</h1>
       <i class='fa fa-close'></i>
     <p>An Error occured</p>
     </div>  
@@ -27,8 +29,9 @@ if(isset($_POST['submit-btn'])){
     }
   }else{
     
-    $error = "<div class='warn wow slideInDown slow ' id='two'>
+    $error = "<div class='warn wow slideInDown slow ' id='one'>
     <div>
+      <h1 id='can'>&times;</h1>
       <i class='fa fa-exclamation-triangle'></i>
     <p>Email already Exist</p>
     </div>  
